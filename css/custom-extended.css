@@ -1,0 +1,510 @@
+@charset "utf-8";
+body {
+    background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+p {
+    font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+a {
+    text-decoration: none !important;
+    transition: all 0.5s;
+}
+.carousel-item img {
+    width: 100%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) #edf1f4);
+    border-radius: 40px;
+    /* box-shadow: 15px 15px 20px rgba(0,0,0,0.1), -15px -15px 20px #fff; */
+}
+.range {
+    width: 100%;
+    height: 27px;
+    padding: 13px 0;
+    position: relative;
+    appearance: none;
+    background: #edf1f4;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff,
+    inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/*.range:before {
+    content: '\f105';
+    position: absolute;
+    font-family: 'FontAwesome';
+    width: 10px;
+    height: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    left: 16px;
+    top: -2px;
+}
+.range:after {
+    content: '\f104';
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: -2px;
+    left: 6px;
+    width: 10px;
+    font-size: 18px;
+    height: 10px;
+    font-weight: 700;
+}*/
+.range::-webkit-slider-thumb {
+    appearance: none;
+    width: 28px;
+    height: 27px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #062537;
+    box-shadow: -410px 0 0 400px #cc3ce2;
+    background-image: url("https://cdn.jsdelivr.net/gh/RayVelez27/sliderforkairos@master/images/dobar.png");
+    background-size: 22px;
+    cursor: pointer;
+    background-position: center;
+    /* /     background-repeat: no-repeat; / */
+}
+
+/*.range::-webkit-slider-thumb{
+	appearance: none;
+	width: 28px;
+	height: 25px;
+	background: #fff;
+	border-radius: 50%;
+	border: 2px solid #062537;
+	box-shadow: -400px 0 0 400px #Cc3ce2;
+}*/
+
+.anual-hed h3 {
+    color: #cc3ce2;
+    font-size: 40px;
+    line-height: 1;
+    text-align: right;
+    font-weight: 700;
+    margin-bottom: 38px;
+}
+
+.anual-hed h5 {
+    font-weight: 700;
+    font-size: 28px;
+    color: #47475b;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.anual-hed p {
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 70px;
+    text-align: right;
+}
+
+.anual-hed h2 {
+    font-size: 58px;
+    margin-bottom: 30px;
+    text-align: right;
+    font-weight: 700;
+    color: #082049;
+    line-height: 1.18;
+    letter-spacing: -0.025em;
+}
+.potential-saving {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(143deg, #082049 0, #c86bfa 50%);
+    padding: 70px 60px;
+    border-radius: 40px;
+}
+
+.pot-hed {
+    text-align: center;
+}
+
+.pot-hed h2 {
+    font-size: 82px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.pot-hed sup {
+    font-size: 0.58em;
+    top: -0.62em;
+    margin-right: 3px;
+    font-weight: 500;
+}
+
+.pot-hed sub {
+    font-size: 0.33em;
+    top: 0.5em;
+}
+.pot-hed h4 {
+    font-size: 28px;
+    margin-bottom: 65px;
+    color: #fff;
+}
+.pot-cont p {
+    font-size: 22px;
+    margin-bottom: 60px;
+    text-align: left;
+    color: #fff;
+    padding: 0 20px;
+}
+.pot-cont button:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+.pot-cont button {
+    font-size: 19px;
+    padding: 27px 63px;
+    transition: all 1s !important;
+    cursor: pointer;
+    outline: 0 !important;
+    text-decoration: none !important;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    border: 0;
+    padding: 23px 55px;
+    font-size: 16px;
+    letter-spacing: 0.075em;
+    line-height: 1;
+    text-transform: uppercase;
+    border-radius: 70px;
+    color: #eee;
+    box-shadow: 0 23px 57px rgba(32, 82, 95, 0.44);
+    background-image: linear-gradient(123deg, #a624ec 0, #6d47a6 42%);
+    background-size: 170% 100%;
+    background-position: 0 0;
+    transition: color 0.15s ease-in-out, background-position 0.25s ease-in-out,
+    box-shadow 0.15s ease-in-out, opacity 0.25s ease-in;
+}
+.range-slider {
+    padding: 70px 0;
+}
+.pot-cont {
+    text-align: center;
+}
+.rngsli ul {
+    display: flex;
+    padding: 12px 0;
+}
+.rngsli li {
+    padding: 0px 13px 0 20px;
+    font-size: 17px;
+    color: #999;
+    position: relative;
+}
+.rngsli li:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #999;
+    bottom: 30px;
+    left: 50px;
+    border-radius: 50%;
+}
+.rngsli li:first-child {
+    padding-left: 0;
+}
+
+.rngsli li:last-child {
+    padding-left: 43px;
+}
+.rngsli li:first-child:after {
+    left: 22px;
+}
+.rngsli li:last-child:after {
+    left: 92px;
+}
+.saving-box {
+    opacity: 0.54;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.34);
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    border-radius: 40px;
+    height: 553px;
+    z-index: -2;
+    width: 100%;
+}
+.st-second {
+    opacity: 0.54;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.34);
+    position: absolute;
+    left: 80px;
+    top: 62px;
+    border-radius: 40px;
+    height: 500px;
+    width: 100%;
+    z-index: -6;
+}
+
+@media screen and (max-width: 900px) {
+    .st-second {
+        left: 62px;
+    }
+}
+
+.flip-card {
+    width: 100%;
+    height: 630px;
+    padding: 70px 0;
+    margin-left: 0;
+    border-radius: 40px;
+    transform-style: preserve-3d;
+    /* transform-origin: center right; */
+    transition: transform 1s;
+    background: linear-gradient(143deg, #cc3ce2 0, #062537 87%);
+    /* background-color: transparent; */
+    perspective: 1000px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+} */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: red;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: translateX(-100%) rotateY(-180deg);
+
+    transform: rotateY(180deg);
+}
+
+.flip-card-back label {
+    width: 100%;
+    text-align: left;
+    margin: 0 0 9px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.flip-card-back input {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.flip-card-back textarea {
+    width: 100%;
+    height: 170px;
+    resize: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.flip-card-back button {
+    font-size: 19px;
+    padding: 27px 63px;
+    cursor: pointer;
+    outline: 0 !important;
+    text-decoration: none !important;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    border: 0;
+    padding: 23px 55px;
+    font-size: 16px;
+    letter-spacing: 0.075em;
+    line-height: 1;
+    text-transform: uppercase;
+    border-radius: 70px;
+    color: #eee;
+    box-shadow: 0 23px 57px rgba(32, 82, 95, 0.44);
+    background-image: linear-gradient(123deg, #a624ec 0, #6d47a6 42%);
+    background-size: 170% 100%;
+    background-position: 0 0;
+    transition: color 0.15s ease-in-out, background-position 0.25s ease-in-out,
+    box-shadow 0.15s ease-in-out, opacity 0.25s ease-in;
+    margin-top: 20px;
+}
+
+@media only screen and (min-device-width: 520px) and (max-device-width: 767px) and (orientation: portrait) {
+}
+@media only screen and (min-device-width: 120px) and (max-device-width: 750px) and (orientation: landscape) {
+}
+@media only screen and (min-device-width: 751px) and (max-device-width: 999px) and (orientation: portrait) {
+}
+@media only screen and (min-device-width: 751px) and (max-device-width: 999px) and (orientation: landscape) {
+}
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1030px) and (orientation: portrait) {
+}
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1030px) and (orientation: landscape) {
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1920px) {
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+}
+@media only screen and (min-width: 300px) and (max-width: 519px) {
+    .anual-hed h2 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 26px;
+    }
+    .anual-hed p {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .anual-hed h5 {
+        font-size: 19px;
+        text-align: center;
+    }
+    .noUi-target {
+        margin-left: 20px;
+    }
+    .anual-hed h3 {
+        font-size: 27px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .pot-hed h2 {
+        font-size: 62px;
+        margin-bottom: 24px;
+    }
+    .pot-hed h4 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .pot-cont p {
+        font-size: 17px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .flip-card {
+        width: 100%;
+        height: 470px;
+        margin: 90px 0;
+        margin-left: 0;
+    }
+    .st-second {
+        left: 30px;
+        top: 62px;
+        height: 60px;
+        width: 88%;
+    }
+    .saving-box {
+        left: 28px;
+        top: 58px;
+        width: 89%;
+        height: 230px;
+    }
+    .flip-card-back label {
+        margin: 0 0 0px 0 !important;
+    }
+    .flip-card-back textarea {
+        height: 110px !important;
+    }
+    .flip-card-back input {
+        margin: 7px 0 !important;
+    }
+    .flip-card-back button {
+        padding: 20px 55px !important;
+    }
+    .potentila {
+        height: 320px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .flip-card {
+        width: 95%;
+    }
+
+    .saving-box {
+        width: 94.5%;
+    }
+
+    .st-second {
+        left: 32px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flip-card {
+        width: 90%;
+    }
+
+    .saving-box {
+        width: 87.5%;
+    }
+
+    .st-second {
+        left: 10px;
+    }
+}

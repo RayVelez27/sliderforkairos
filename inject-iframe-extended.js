@@ -26,12 +26,9 @@ function FrameBuilder(formId, appendTo, initialHeight, iframeCode, title, embedS
     this.createFrame = function () {
         var tmp_is_ie = !!window.ActiveXObject;
         this.iframeDomId = document.getElementById(this.formId) ? this.formId + '_' + new Date().getTime() : this.formId;
-        if (typeof $jot !== 'undefined') {
-            var iframe = document.getElementById("231767650122051");
-            var parent = $jot(iframe).closest('.jt-feedback.u-responsive-lightbox');
-            if (parent) {
-                this.iframeDomId = 'lightbox-' + this.iframeDomId;
-            }
+        var parent = document.getElementById('231767650122051_parent');
+        if (parent) {
+            this.iframeDomId = 'lightbox-' + this.iframeDomId;
         }
         var htmlCode = "<" + "iframe title=\"" + title.replace(/[\\"']/g, '\\$&').replace(/&amp;/g, '&') + "\" src=\"\" allowtransparency=\"true\" allow=\"geolocation; microphone; camera\" allowfullscreen=\"true\" name=\"" + this.formId + "\" id=\"" + this.iframeDomId + "\" style=\"width: 10px; min-width:" + this.frameMinWidth + "; display: block; overflow: hidden; height:" + this.initialHeight + "px; border: none;\" scrolling=\"no\"" + this.defaultHeight + "></if" + "rame>";
         if (this.appendTo === false) {
@@ -428,7 +425,7 @@ function FrameBuilder(formId, appendTo, initialHeight, iframeCode, title, embedS
 }
 
 FrameBuilder.get = qsProxy || [];
-var i231767650122051 = new FrameBuilder("231767650122051", '231767650122051', "", `<!DOCTYPE html>
+var i231767650122051 = new FrameBuilder("231767650122051", '231767650122051_parent', "", `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -441,7 +438,7 @@ var i231767650122051 = new FrameBuilder("231767650122051", '231767650122051', ""
   <link rel="icon" href="#">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/RayVelez27/sliderforkairos@master/css/custom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/RayVelez27/sliderforkairos@master/css/custom-extended.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/RayVelez27/sliderforkairos@master/css/bootstrap.min.css">
@@ -615,7 +612,7 @@ var i231767650122051 = new FrameBuilder("231767650122051", '231767650122051', ""
             case"setHeight":
                 var height = args[1] + "px";
                 if (window.jfDeviceType === 'mobile' && typeof $jot !== 'undefined') {
-                    var parent = $jot(iframe).closest('.jt-feedback.u-responsive-lightbox');
+                    var parent = $jot(iframe).closest('#231767650122051_parent');
                     if (parent) {
                         height = '100%';
                     }
