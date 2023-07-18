@@ -76,7 +76,7 @@
                 </div>
                 <div class="pot-cont">
                   <p>Start saving towards your company success with credit card processing fees off your list</p>
-                  <button onclick="{{flipForm()}}">GET STARTED</button>
+                  <button onclick="{{redirect()}}">GET STARTED</button>
                 </div>
               </div>
               <div class="flip-card-back ">
@@ -120,10 +120,8 @@
         saveValue.innerHTML = "<sup>$</sup>" + updatedValue.toString() + " <sub>/yr.</sub>";
     });
 
-    function flipForm() {
-        document.querySelector('.flip-card').style.transform = 'rotateY(180deg)';
-        // document.querySelector('.flip-card').style.transform.style = 'preserve-3d';
-
+    function redirect() {
+        document.location.href = 'https://www.kairospayments.com/application'
     }
 </script>
 
